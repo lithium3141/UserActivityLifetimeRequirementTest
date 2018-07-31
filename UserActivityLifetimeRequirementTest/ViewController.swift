@@ -37,7 +37,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         activity.isEligibleForSearch = true
         activity.isEligibleForHandoff = true
         activity.isEligibleForPrediction = true
-        activity.persistentIdentifier = NSUserActivityPersistentIdentifier(rawValue: identifier)
+        activity.persistentIdentifier = NSUserActivityPersistentIdentifier(identifier)
         activity.requiredUserInfoKeys = []
         activity.userInfo = [:]
         activity.becomeCurrent()
