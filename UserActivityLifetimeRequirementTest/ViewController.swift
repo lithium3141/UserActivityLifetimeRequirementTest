@@ -33,7 +33,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         
         let identifier = "com.lithium3141.UserActivityLifetimeRequirementTest"
         let activity = NSUserActivity(activityType: identifier)
-        activity.title = "It's a user activity!"
+        activity.title = "User activity: \(lifetime.title)"
         activity.isEligibleForSearch = true
         activity.isEligibleForHandoff = true
         activity.isEligibleForPrediction = true
